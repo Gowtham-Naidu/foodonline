@@ -1,5 +1,5 @@
 {% load static %}
-<div class="page-section restaurant-detail-image-section" style=" background: url({{ vendor.user_profile.cover_photo.url }}) no-repeat scroll 0 0 / cover;">
+<div class="page-section restaurant-detail-image-section" style=" background: url('{{ vendor.user_profile.cover_photo.url }}') no-repeat scroll 0 0 / cover;">
     <!-- Container Start -->
     <div class="container">
         <!-- Row Start -->
@@ -18,7 +18,7 @@
                             <span class="restaurant-title">{{vendor.restaurant_name}}</span>
                             <div class="text">
                                 <i class="icon-location"></i>
-                                <p>{{vendor.user_profile.full_address}}</p>
+                                <p>{{vendor.user_profile.address}}</p>
                             </div>
                         </div>
                     </div>
